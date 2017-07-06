@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "458622035474",
+    "firebase_url": "https://learnksl-d9fd4.firebaseio.com",
+    "project_id": "learnksl-d9fd4",
+    "storage_bucket": "learnksl-d9fd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458622035474:android:3fb75b100900ec5b",
+        "android_client_info": {
+          "package_name": "learnksl.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458622035474-ac3f3oe6aak3v9njibaufqnj6b9lvtdn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "learnksl.com",
+            "certificate_hash": "9c1b136e2d4d3ba50e52ad9f6465bfd9612c22e1"
+          }
+        },
+        {
+          "client_id": "458622035474-b9upevuinlsgoha9qts6ur8c8tt3rcv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOTMP5bgv41X8RqELgGmj7Dv-INbFMH9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458622035474-b9upevuinlsgoha9qts6ur8c8tt3rcv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
