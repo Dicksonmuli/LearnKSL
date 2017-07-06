@@ -15,7 +15,11 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/white"
+            android:background="@drawable/basic"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_margin="5dp"
             android:layout_weight="1.0"
             android:text="Basics" />
 
@@ -23,7 +27,13 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_green_light"
+            android:background="@drawable/tut"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
             android:layout_weight="1.0"
             android:text="Tutorials" />
 
@@ -39,7 +49,12 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_blue_light"
+            android:background="@drawable/com"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20dp"
             android:layout_weight="1.0"
             android:text="Communication" />
 
@@ -47,9 +62,13 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_red_light"
             android:layout_weight="1.0"
-            android:text="Feedback" />
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+
+            android:textSize="25dp"
+            android:background="@drawable/feedback"/>
 
     </LinearLayout>
 </LinearLayout>
