@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LearnKSL</string>
+    <string name="description"><u>Description</u></string>
 </resources>

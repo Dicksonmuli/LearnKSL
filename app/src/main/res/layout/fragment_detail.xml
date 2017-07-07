@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECEFF1"
     tools:context="com.learnksl.learnksl.ui.DetailFragment">
 
     <RelativeLayout
@@ -13,7 +14,10 @@
             android:id="@+id/restaurantImageView"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:layout_above="@+id/textView"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:scaleType="centerCrop"
@@ -28,7 +32,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
-            android:background="#80ffb9c9"
+            android:background="#80607D8B"
             android:gravity="center"
             android:text="Sign Name"
             android:textColor="#fff"
@@ -38,40 +42,25 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/restaurantImageView"
+            android:layout_above="@+id/textView2"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp"
-            android:textStyle="bold"
-            android:text="Description Title"
-            android:textSize="20dp" />
+            android:layout_marginBottom="12dp"
+            android:text="@string/description"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginBottom="13dp"
             android:text="In this lesson we'll learn how to communicate between Android components, specifically providing data to fragments using something called parcelables. To do this, we'll learn a little more about serialization, implement a tool called Parceler into our project, and create a special PagerAdapter to act as a bridge between our data and fragment"
             android:textSize="15dp"
-            android:layout_marginTop="35dp"
-            android:layout_below="@+id/textView"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/buttonAwesome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Awesome Button"
-            android:textColor="#fff"
-            android:background="#ffc0cb"
-            android:layout_marginBottom="36dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+        />
     </RelativeLayout>
-
 
 </FrameLayout>
 
