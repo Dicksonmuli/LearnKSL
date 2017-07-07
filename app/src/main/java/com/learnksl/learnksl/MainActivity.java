@@ -11,16 +11,24 @@ import com.learnksl.learnksl.ui.BasicsListActivity;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
-    @Bind(R.id.button1)
-    Button mButton1;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    //binding views
+    @Bind(R.id.button1) Button mButton1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-
+        mButton1.setOnClickListener(this);
     }
+    //override onclick method
+    @Override
+    public void onClick(View view) {
+        if (view == mButton1) {
+            Intent intent = new Intent(MainActivity.this, BasicsListActivity.class);
+            startActivity(intent);
+        }
+    }
+
 }
