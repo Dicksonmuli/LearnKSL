@@ -53,15 +53,27 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="13dp"
             android:text="In this lesson we'll learn how to communicate between Android components, specifically providing data to fragments using something called parcelables. To do this, we'll learn a little more about serialization, implement a tool called Parceler into our project, and create a special PagerAdapter to act as a bridge between our data and fragment"
             android:textSize="15dp"
+            android:gravity="fill"
+            android:layout_margin="15dp"
             android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/saveButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/restaurantImageView"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:clickable="true"
+            android:src="@drawable/save" />
         />
     </RelativeLayout>
-
 </FrameLayout>
 
 
