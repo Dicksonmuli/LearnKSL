@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -27,11 +28,11 @@ import butterknife.ButterKnife;
 public class BasicsListActivity extends AppCompatActivity {
 
     //binding views
-    @Bind(R.id.listView) ListView mListView;
+
 
     //member variables
     private Integer mPosition;
-    String[] basics = new String[]{"alphabet, numbers"};
+//    String[] basics = new String[]{"alphabet, numbers"};
 
     //Database variable
     private DatabaseReference mDatabase;
@@ -46,8 +47,8 @@ public class BasicsListActivity extends AppCompatActivity {
 //        Intent intent = getIntent();
 //        final String basic = intent.getStringExtra("basic");
 
-        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.custom_list_item, basics);
-        mListView.setAdapter(adapter);
+//        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.basics_list_item, basics);
+//        mListView.setAdapter(adapter);
 //        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //            @Override
 //            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
