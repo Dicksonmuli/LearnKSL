@@ -113,7 +113,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/monthsTextView"
-                android:src="@drawable/ic_today_black_24dp"/>
+                android:src="@drawable/ic_date_range_black_24dp"/>
 
             <LinearLayout
                 android:orientation="vertical"
