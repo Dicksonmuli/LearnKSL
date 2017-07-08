@@ -25,10 +25,13 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class BasicsListActivity extends AppCompatActivity {
+public class BasicsListActivity extends AppCompatActivity implements View.OnClickListener{
 
     //binding views
-
+    @Bind(R.id.alphabetsTextView) TextView mAlphabetsTextView;
+    @Bind(R.id.numbersTextView) TextView mNumbersTextView;
+    @Bind(R.id.daysTextView) TextView mDaysTextView;
+    @Bind(R.id.monthsTextView) TextView mMonthsTextView;
 
     //member variables
     private Integer mPosition;
@@ -37,13 +40,19 @@ public class BasicsListActivity extends AppCompatActivity {
     //Database variable
     private DatabaseReference mDatabase;
 
-    private List<String> dbbasics = new ArrayList<>();
+//    private List<String> dbbasics = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_basics_list);
         ButterKnife.bind(this);
+
+        mAlphabetsTextView.setOnClickListener(this);
+        mNumbersTextView.setOnClickListener(this);
+        mDaysTextView.setOnClickListener(this);
+        mMonthsTextView.setOnClickListener(this);
+
 //        Intent intent = getIntent();
 //        final String basic = intent.getStringExtra("basic");
 
