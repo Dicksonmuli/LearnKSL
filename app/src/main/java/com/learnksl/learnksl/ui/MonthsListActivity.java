@@ -10,17 +10,13 @@ import java.util.List;
 
 public class MonthsListActivity extends AppCompatActivity {
 
-    //    member variables
-    private Integer mPosition;
-    String mSource;
 
-    private List<String> dbMonths = new ArrayList<>();
-
-    //Database variable
-    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_months);
+
+
     }
 }
