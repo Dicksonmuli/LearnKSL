@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.learnksl.learnksl.MainActivity;
 import com.learnksl.learnksl.R;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
     @Bind(R.id.monthsTextView) TextView mMonthsTextView;
 
     //member variables
-    private Integer mPosition;
+//    private Integer mPosition;
 //    String[] basics = new String[]{"alphabet, numbers"};
 
     //Database variable
@@ -81,5 +82,26 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
 //                });
 //            }
 //        });
+    }
+
+    //override onclick method
+    @Override
+    public void onClick(View view) {
+        if (view == mAlphabetsTextView) {
+            Intent intent = new Intent(BasicsListActivity.this, AlphabetsListActivity.class);
+            startActivity(intent);
+        }
+        if (view == mNumbersTextView) {
+            Intent intent = new Intent(BasicsListActivity.this, NumbersListActivity.class);
+            startActivity(intent);
+        }
+        if (view == mDaysTextView) {
+            Intent intent = new Intent(BasicsListActivity.this, DaysListActivity.class);
+            startActivity(intent);
+        }
+        if (view == mMonthsTextView) {
+            Intent intent = new Intent(BasicsListActivity.this, MonthsListActivity.class);
+            startActivity(intent);
+        }
     }
 }
