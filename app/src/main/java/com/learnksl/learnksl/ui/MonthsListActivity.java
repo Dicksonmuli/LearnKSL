@@ -58,13 +58,17 @@ public class MonthsListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String months = ((TextView) view).getText().toString();
                 Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
-                mDatabase = FirebaseDatabase.getInstance().getReference().child("months");
+                mDatabase = FirebaseDatabase.getInstance().getReference("NUMBERS");
+                DatabaseReference child1 = mDatabase.child("1");
+                DatabaseReference child2 = child1.child("PICTURE");
+
                 final Integer itemPosition = i;
+
                 mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                            String description = snapshot.getValue(String.class);
+                            String description = snapshot.child("PICTURE").getValue(String.class);
                             mDbMonths.add(description);
                         }
                         AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
