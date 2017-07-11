@@ -9,6 +9,7 @@
         android:name="com.learnksl.learnksl.ui.DetailFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_months_detail" />
+
 
 </RelativeLayout>

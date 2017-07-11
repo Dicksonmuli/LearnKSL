@@ -34,6 +34,13 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
     @Bind(R.id.daysTextView) TextView mDaysTextView;
     @Bind(R.id.monthsTextView) TextView mMonthsTextView;
 
+    @Bind(R.id.alphabetsImageView) ImageView mAlphabetsImageView;
+    @Bind(R.id.numbersImageView) ImageView mNumbersImageView;
+    @Bind(R.id.daysImageView) ImageView mDaysImageView;
+    @Bind(R.id.monthsImageView) ImageView mMonthsImageView;
+
+
+
     //member variables
 //    private Integer mPosition;
 //    String[] basics = new String[]{"alphabet, numbers"};
@@ -87,19 +94,19 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
     //override onclick method
     @Override
     public void onClick(View view) {
-        if (view == mAlphabetsTextView) {
+        if (view == mAlphabetsTextView || view == mAlphabetsImageView) {
             Intent intent = new Intent(BasicsListActivity.this, AlphabetsListActivity.class);
             startActivity(intent);
         }
-        if (view == mNumbersTextView) {
+        if (view == mNumbersTextView || view == mNumbersImageView) {
             Intent intent = new Intent(BasicsListActivity.this, NumbersListActivity.class);
             startActivity(intent);
         }
-        if (view == mDaysTextView) {
+        if (view == mDaysTextView || view == mDaysImageView) {
             Intent intent = new Intent(BasicsListActivity.this, DaysListActivity.class);
             startActivity(intent);
         }
-        if (view == mMonthsTextView) {
+        if (view == mMonthsTextView || view == mMonthsImageView) {
             Intent intent = new Intent(BasicsListActivity.this, MonthsListActivity.class);
             startActivity(intent);
         }

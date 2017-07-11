@@ -37,13 +37,13 @@ public class MonthsDetailFragment extends Fragment {
     private static final int MAX_WIDTH = 400;
     private static final int MAX_HEIGHT = 300;
     @Bind(R.id.restaurantImageView) ImageView mImageLabel;
-    @Bind(R.id.restaurantNameTextView) TextView mNameLabel;
+    @Bind(R.id.monthTextView) TextView mNameLabel;
 
     //    member variables
     private Integer mPosition;
     String mSource;
 
-    private List<String> dbMonths = new ArrayList<>();
+    private List<String> mMonths = new ArrayList<>();
 
     //Database variable
     private DatabaseReference mDatabase;
@@ -58,13 +58,13 @@ public class MonthsDetailFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
 
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Basics").child("months");
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("months");
         mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                    String dbbasic = snapshot.getValue(String.class);
-                    dbMonths.add(dbbasic);
+                    String dbmonths = snapshot.getValue(String.class);
+                    mMonths.add(dbmonths);
                 }
 
             }
@@ -82,12 +82,12 @@ public class MonthsDetailFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_months_detail, container, false);
         ButterKnife.bind(this, view);
 
-        Picasso.with(view.getContext())
-                .load(dbMonths.getImageUrl())
-                .resize(MAX_WIDTH, MAX_HEIGHT)
-                .centerCrop()
-                .into(mImageLabel);
-        mNameLabel.setText(dbMonths.getName());
+//        Picasso.with(view.getContext())
+//                .load(dbMonths.getImageUrl())
+//                .resize(MAX_WIDTH, MAX_HEIGHT)
+//                .centerCrop()
+//                .into(mImageLabel);
+        mNameLabel.setText(mMonths.get(1));
 
 
         return view;
