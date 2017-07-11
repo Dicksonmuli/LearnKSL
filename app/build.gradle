@@ -39,4 +39,4 @@ dependencies {
     annotationProcessor 'org.parceler:parceler:1.1.6'
 }
 //google services -firebase
-//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'
