@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.learnksl.learnksl.R;
+import com.squareup.picasso.Picasso;
 
 import org.parceler.Parcels;
 
@@ -26,6 +27,8 @@ import butterknife.ButterKnife;
  * A simple {@link Fragment} subclass.
  */
 public class DetailFragment extends Fragment {
+    private static final int MAX_WIDTH = 400;
+    private static final int MAX_HEIGHT = 300;
     @Bind(R.id.restaurantImageView) ImageView mImageLabel;
     @Bind(R.id.restaurantNameTextView) TextView mNameLabel;
 
@@ -62,6 +65,15 @@ public class DetailFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_detail, container, false);
         ButterKnife.bind(this, view);
 
+//        Picasso.with(view.getContext())
+//                .load(mMonth)
+//                .resize(MAX_WIDTH, MAX_HEIGHT)
+//                .centerCrop()
+//                .into(mImageLabel);
+
+        mNameLabel.setText(mMonth);
+
+        return view;
 
     }
 
