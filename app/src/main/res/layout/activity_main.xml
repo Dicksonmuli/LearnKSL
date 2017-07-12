@@ -1,83 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="#E2cfea">
 
+    <!-- A CardView that contains a TextView -->
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.0"
+        <ImageView
+            android:id="@+id/restaurantImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/basic" />
 
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1.0"
-            android:background="#3E5C76"
+        <TextView
+            android:id="@+id/signName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/restaurantImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#99607D8B"
+            android:gravity="center"
             android:text="Basics"
             android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="30sp" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="5dp"
+        <ImageView
+            android:id="@+id/restaurantImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tut"
+            android:layout_below="@+id/restaurantImageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
 
-            android:layout_weight="1.0"
-            android:background="#748CAB"
+        <TextView
+            android:id="@+id/signName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99607D8B"
+            android:gravity="center"
             android:text="Tutorials"
             android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="30sp"
+            android:layout_alignBottom="@+id/restaurantImageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:id="@+id/restaurantImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/com"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/restaurantImageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.0"
-        android:orientation="horizontal" >
-
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1.0"
-            android:background="#748CAB"
+        <TextView
+            android:id="@+id/signName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99607D8B"
+            android:gravity="center"
             android:text="Communication"
             android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="30sp"
+            android:layout_alignBottom="@+id/restaurantImageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <ImageView
+            android:id="@+id/ImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feedback"
+            android:layout_below="@+id/restaurantImageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp" />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_weight="1.0"
-            android:background="#3E5C76"
-            android:text="FACTS AND FAQs"
+        <TextView
+            android:id="@+id/signName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ImageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#99607D8B"
+            android:gravity="center"
+            android:text="Feedback"
             android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="30sp" />
 
-    </LinearLayout>
-</LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView >

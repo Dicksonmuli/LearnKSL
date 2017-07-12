@@ -24,7 +24,7 @@
             android:src="@drawable/tut" />
 
         <TextView
-            android:id="@+id/restaurantNameTextView"
+            android:id="@+id/signName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/restaurantImageView"

@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.learnksl.learnksl.ui.BasicsListActivity;
 
@@ -13,14 +14,14 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //binding views
-    @Bind(R.id.button1) Button mButton1;
+    @Bind(R.id.restaurantImageView)
+    ImageView mButton1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         mButton1.setOnClickListener(this);
     }
     //override onclick method
@@ -31,6 +32,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         }
     }
-
 
 }
