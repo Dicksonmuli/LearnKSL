@@ -1,5 +1,6 @@
 package com.learnksl.learnksl.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.learnksl.learnksl.R;
+
+import org.parceler.Parcels;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,13 +59,14 @@ public class MonthsListActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String months = ((TextView) view).getText().toString();
+                final String months = ((TextView) view).getText().toString();
                 Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
-                mDatabase = FirebaseDatabase.getInstance().getReference("NUMBERS");
+
+                mDatabase = FirebaseDatabase.getInstance().getReference().child("NUMBERS").getRoot();
+
                 DatabaseReference child1 = mDatabase.child("1");
                 DatabaseReference child2 = child1.child("PICTURE");
 
-                final Integer itemPosition = i;
 
                 mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -71,10 +75,18 @@ public class MonthsListActivity extends AppCompatActivity {
                             String description = snapshot.child("PICTURE").getValue(String.class);
                             mDbMonths.add(description);
                         }
-                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
-                        monthdialogue.setMessage(mDbMonths.get(itemPosition));
-                        monthdialogue.show();
-                        monthdialogue.setCancelable(true);
+
+                        //intent when item clicked
+                        Intent intent = new Intent(getApplicationContext(), BasicsDetailActivity.class);
+                        Bundle args = new Bundle();
+                        args.putParcelable("months", Parcels.wrap(mDbMonths));
+                        args.putInt("position", mPosition);
+                        startActivity(intent);
+
+//                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
+//                        monthdialogue.setMessage(mDbMonths.get(itemPosition));
+//                        monthdialogue.show();
+//                        monthdialogue.setCancelable(true);
                     }
 
                     @Override
@@ -82,7 +94,11 @@ public class MonthsListActivity extends AppCompatActivity {
 
                     }
                 });
+
+
+
             }
         });
     }
+
 }
