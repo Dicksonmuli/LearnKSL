@@ -80,7 +80,7 @@ public class MonthsListActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), BasicsDetailActivity.class);
                         Bundle args = new Bundle();
                         args.putParcelable("months", Parcels.wrap(mDbMonths));
-                        args.putInt("position", mPosition);
+//                        args.putInt("position", mPosition);
                         startActivity(intent);
 
 //                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
