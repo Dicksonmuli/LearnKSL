@@ -77,6 +77,11 @@ public class MonthsListActivity extends AppCompatActivity {
                             mDbMonths.add(description);
                         }
 
+                        //intent when item clicked
+                        Intent intent = new Intent(getApplicationContext(), BasicsDetailActivity.class);
+                        Bundle args = new Bundle();
+                        args.putParcelable("months", Parcels.wrap(mDbMonths));
+                        startActivity(intent);
 
 //                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
 //                        monthdialogue.setMessage(mDbMonths.get(itemPosition));
@@ -94,10 +99,6 @@ public class MonthsListActivity extends AppCompatActivity {
 
             }
         });
-        //intent when item clicked
-        Intent intent = new Intent(this, BasicsDetailActivity.class);
-        Bundle args = new Bundle();
-        args.putParcelable("months", Parcels.wrap(mDbMonths));
-        startActivity(intent);
     }
+
 }
