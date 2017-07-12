@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -75,6 +77,12 @@ public class DetailFragment extends Fragment {
 
         return view;
 
+    }
+    //inflating main/overflow menu
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+
+//            inflater.inflate(R.menu.menu_main, menu);
     }
 
 
