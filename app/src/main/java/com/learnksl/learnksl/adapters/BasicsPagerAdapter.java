@@ -28,6 +28,10 @@ public class BasicsPagerAdapter extends FragmentPagerAdapter{
         return mDbMonths.size();
     }
 
-
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mDbMonths.get(position);
+    }
+}
 
 }

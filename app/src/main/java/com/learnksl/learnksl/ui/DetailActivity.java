@@ -30,11 +30,11 @@ public class DetailActivity extends AppCompatActivity {
 
 //        pull out our ArrayList<> Parcelable using the unwrap() method
         mDbMonths = Parcels.unwrap(getIntent().getParcelableExtra("months"));
-//        int startingPosition =getIntent().getIntExtra(i, 0);
+        int startingPosition =getIntent().getIntExtra("position", 0);
 
 //        instructing ViewPager to use adapterViewPager adapter. And set the current item to the position of the item that was just clicked on
         adapterViewPager = new BasicsPagerAdapter(getSupportFragmentManager(), mDbMonths);
-//        mViewPager.setAdapter(adapterViewPager);
+        mViewPager.setAdapter(adapterViewPager);
         mViewPager.setCurrentItem(startingPosition);
     }
 }

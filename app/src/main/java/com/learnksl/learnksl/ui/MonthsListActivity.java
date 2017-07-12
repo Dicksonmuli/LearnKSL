@@ -67,7 +67,6 @@ public class MonthsListActivity extends AppCompatActivity {
                 DatabaseReference child1 = mDatabase.child("1");
                 DatabaseReference child2 = child1.child("PICTURE");
 
-                final Integer itemPosition = i;
 
                 mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
@@ -81,6 +80,7 @@ public class MonthsListActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), BasicsDetailActivity.class);
                         Bundle args = new Bundle();
                         args.putParcelable("months", Parcels.wrap(mDbMonths));
+                        args.putInt("position", mPosition);
                         startActivity(intent);
 
 //                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
