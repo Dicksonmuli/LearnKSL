@@ -59,7 +59,7 @@ public class MonthsListActivity extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String months = ((TextView) view).getText().toString();
+                final String months = ((TextView) view).getText().toString();
                 Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
 
                 mDatabase = FirebaseDatabase.getInstance().getReference().child("NUMBERS").getRoot();
@@ -76,6 +76,7 @@ public class MonthsListActivity extends AppCompatActivity {
                             String description = snapshot.child("PICTURE").getValue(String.class);
                             mDbMonths.add(description);
                         }
+
 
 //                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
 //                        monthdialogue.setMessage(mDbMonths.get(itemPosition));
@@ -95,7 +96,8 @@ public class MonthsListActivity extends AppCompatActivity {
         });
         //intent when item clicked
         Intent intent = new Intent(this, BasicsDetailActivity.class);
-        Intent.putExtra(mMonths, Parcels.wrap(mDbMonths));
+        Bundle args = new Bundle();
+        args.putParcelable("months", Parcels.wrap(mDbMonths));
         startActivity(intent);
     }
 }
