@@ -58,7 +58,7 @@ public class MonthsListActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 String months = ((TextView) view).getText().toString();
                 Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
-                mDatabase = FirebaseDatabase.getInstance().getReference().child("months");
+                mDatabase = FirebaseDatabase.getInstance().getReference().child("NUMBERS").getRoot();
                 final Integer itemPosition = i;
                 mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
