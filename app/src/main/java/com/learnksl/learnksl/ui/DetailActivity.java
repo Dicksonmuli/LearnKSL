@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.learnksl.learnksl.R;
+import com.learnksl.learnksl.adapters.BasicsPagerAdapter;
 
 import org.parceler.Parcels;
 
@@ -32,8 +33,8 @@ public class DetailActivity extends AppCompatActivity {
 //        int startingPosition =getIntent().getIntExtra(i, 0);
 
 //        instructing ViewPager to use adapterViewPager adapter. And set the current item to the position of the item that was just clicked on
-        adapterViewPager = new BasicsPagerAdapter(getSupportFragmentManager(), mRestaurants, mSource);
-        mViewPager.setAdapter(adapterViewPager);
+        adapterViewPager = new BasicsPagerAdapter(getSupportFragmentManager(), mDbMonths);
+//        mViewPager.setAdapter(adapterViewPager);
         mViewPager.setCurrentItem(startingPosition);
     }
 }
