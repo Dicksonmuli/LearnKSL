@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.learnksl.learnksl.ui.BasicsListActivity;
+import com.learnksl.learnksl.ui.CommunicationActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //binding views
     @Bind(R.id.restaurantImageView)
     ImageView mButton1;
+    @Bind
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, BasicsListActivity.class);
             startActivity(intent);
         }
+        if (view == mButton2) {
+            Intent intent = new Intent(MainActivity.this, CommunicationActivity.class);
+            startActivity(intent);
+        }
+
     }
 
 }
