@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.learnksl.learnksl.ui.BasicsListActivity;
 import com.learnksl.learnksl.ui.CommunicationActivity;
+import com.learnksl.learnksl.ui.FeedbackActivity;
+import com.learnksl.learnksl.ui.TutorialsActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -28,6 +30,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView mCommunicationImageView;
     @Bind(R.id.communicationTextView)
     TextView mCommunicationTextView;
+    @Bind(R.id.feedbackTextView)
+    ImageView mFeedbackImageView;
+    @Bind(R.id.feedbackTextView)
+    TextView mFeedbackTextView;
 
 
     @Override
@@ -62,6 +68,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (view == mCommunicationTextView) {
             Intent intent = new Intent(MainActivity.this, CommunicationActivity.class);
+            startActivity(intent);
+        }
+        if (view == mFeedbackImageView) {
+            Intent intent = new Intent(MainActivity.this, FeedbackActivity.class);
+            startActivity(intent);
+        }
+        if (view == mFeedbackTextView) {
+            Intent intent = new Intent(MainActivity.this, FeedbackActivity.class);
             startActivity(intent);
         }
 

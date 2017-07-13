@@ -25,7 +25,9 @@
         <activity android:name=".ui.NumbersListActivity" />
         <activity android:name=".ui.DaysListActivity" />
         <activity android:name=".ui.MonthsListActivity" />
-        <activity android:name=".ui.BasicsDetailActivity"></activity>
+        <activity android:name=".ui.BasicsDetailActivity" />
+        <activity android:name=".ui.TutorialsActivity" />
+        <activity android:name=".ui.FeedbackActivity"></activity>
     </application>
 
 </manifest>
