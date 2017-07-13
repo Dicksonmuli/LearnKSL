@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:background="#5D808080"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Finger Spelling"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
@@ -47,11 +47,11 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/numbersTextView"
+                android:id="@+id/numbersTextView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Basic words"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
@@ -74,11 +74,11 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/numbersTextView"
+                android:id="@+id/numbersTextView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Body and health"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
@@ -101,11 +101,11 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/numbersTextView"
+                android:id="@+id/numbersTextView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Schools signs"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
@@ -128,11 +128,11 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/numbersTextView"
+                android:id="@+id/numbersTextView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Family signs"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
@@ -155,43 +155,14 @@
             android:padding="10dp">
 
             <TextView
-                android:id="@+id/numbersTextView"
+                android:id="@+id/numbersTextView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Numbers"
+                android:text="Office Signs"
                 android:textColor="@color/colorPrimary"
                 android:textSize="35dp" />
 
         </LinearLayout>
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:background="@drawable/rectangle"
-        android:layout_margin="6dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/numbersTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Numbers"
-                android:textColor="@color/colorPrimary"
-                android:textSize="35dp" />
-
-        </LinearLayout>
-
-
     </LinearLayout>
 </LinearLayout>
