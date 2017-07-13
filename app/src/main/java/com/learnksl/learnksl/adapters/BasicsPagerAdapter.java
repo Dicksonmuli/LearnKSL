@@ -21,7 +21,7 @@ public class BasicsPagerAdapter extends FragmentPagerAdapter{
     }
     @Override
     public Fragment getItem(int position) {
-        return DetailFragment.newInstance(mDbMonths, position);
+        return DetailFragment.newInstace(mDbMonths, position);
     }
     @Override
     public int getCount() {
@@ -34,4 +34,3 @@ public class BasicsPagerAdapter extends FragmentPagerAdapter{
     }
 }
 
-}
