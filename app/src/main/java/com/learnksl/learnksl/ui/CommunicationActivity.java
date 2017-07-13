@@ -19,6 +19,8 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
     TextView mFingersTextView;
     @Bind(R.id.basicWordsTextView)
     TextView mBasicWordsTextView;
+    @Bind(R.id.colorsTextView)
+    TextView mColorsTextView;
 
 
     @Override
@@ -29,6 +31,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
 
         mFingersTextView.setOnClickListener(this);
         mBasicWordsTextView.setOnClickListener(this);
+        mColorsTextView.setOnClickListener(this);
     }
     //override onclick method
 
@@ -40,6 +43,10 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
         }
         if (view == mBasicWordsTextView) {
             Intent intent = new Intent(CommunicationActivity.this, BasicWordsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mColorsTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, ColorsActivity.class);
             startActivity(intent);
         }
     }
