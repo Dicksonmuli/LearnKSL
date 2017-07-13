@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.learnksl.learnksl.R;
 
-public class CommunicationActivity extends AppCompatActivity {
+public class BodyAndHealthActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.X);
+        setContentView(R.layout.activity_body_and_health);
     }
 }
