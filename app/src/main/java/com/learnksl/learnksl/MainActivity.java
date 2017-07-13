@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView mCommunicationImageView;
     @Bind(R.id.communicationTextView)
     TextView mCommunicationTextView;
-    @Bind(R.id.feedbackTextView)
+    @Bind(R.id.ImageView3)
     ImageView mFeedbackImageView;
     @Bind(R.id.feedbackTextView)
     TextView mFeedbackTextView;
@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         mButton1.setOnClickListener(this);
+        mBasicsTextView.setOnClickListener(this);
+        mCommunicationImageView.setOnClickListener(this);
+        mCommunicationTextView.setOnClickListener(this);
+        mTutorialImageView.setOnClickListener(this);
+        mTutorialsTextView.setOnClickListener(this);
+        mFeedbackImageView.setOnClickListener(this);
+        mFeedbackTextView.setOnClickListener(this);
     }
     //override onclick method
     @Override
