@@ -14,8 +14,12 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class CommunicationActivity extends AppCompatActivity implements View.OnClickListener {
+//    Binding views
     @Bind(R.id.fingersTextView)
     TextView mFingersTextView;
+    @Bind(R.id.basicWordsTextView)
+    TextView mBasicWordsTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
         ButterKnife.bind(this);
 
         mFingersTextView.setOnClickListener(this);
+        mBasicWordsTextView.setOnClickListener(this);
     }
     //override onclick method
 
@@ -33,6 +38,9 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
             Intent intent = new Intent(CommunicationActivity.this, FingerSpellingActivity.class);
             startActivity(intent);
         }
-
+        if (view == mBasicWordsTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, BasicWordsActivity.class);
+            startActivity(intent);
+        }
     }
 }
