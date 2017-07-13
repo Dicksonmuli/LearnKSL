@@ -34,7 +34,8 @@
         <activity android:name=".ui.SchoolSignsActivity" />
         <activity android:name=".ui.FamilySignsActivity" />
         <activity android:name=".ui.OfficeSignsActivity" />
-        <activity android:name=".ui.MoneyAndBusinessActivity"></activity>
+        <activity android:name=".ui.MoneyAndBusinessActivity" />
+        <activity android:name=".ui.ColorsActivity"></activity>
     </application>
 
 </manifest>
