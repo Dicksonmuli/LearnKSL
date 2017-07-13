@@ -109,8 +109,6 @@
             android:textColor="#fff"
             android:textSize="30sp" />
 
-
-
     </RelativeLayout>
 
 </ScrollView >

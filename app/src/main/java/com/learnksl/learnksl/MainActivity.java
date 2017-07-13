@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.learnksl.learnksl.ui.BasicsListActivity;
 import com.learnksl.learnksl.ui.CommunicationActivity;
@@ -15,9 +16,19 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     //binding views
-    @Bind(R.id.restaurantImageView)
+    @Bind(R.id.basicsImageView)
     ImageView mButton1;
-    @Bind
+    @Bind(R.id.basicsTextView)
+    TextView mBasicsTextView;
+    @Bind(R.id.tutorialsImageView)
+    ImageView mTutorialImageView;
+    @Bind(R.id.tutorialsTextView)
+    TextView mTutorialsTextView;
+    @Bind(R.id.communicationImageView)
+    ImageView mCommunicationImageView;
+    @Bind(R.id.communicationTextView)
+    TextView mCommunicationTextView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +44,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, BasicsListActivity.class);
             startActivity(intent);
         }
-        if (view == mButton2) {
+        if (view == mBasicsTextView) {
+            Intent intent = new Intent(MainActivity.this, BasicsListActivity.class);
+            startActivity(intent);
+        }
+        if (view == mTutorialImageView) {
+            Intent intent = new Intent(MainActivity.this, TutorialsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mTutorialsTextView) {
+            Intent intent = new Intent(MainActivity.this, TutorialsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mCommunicationImageView) {
+            Intent intent = new Intent(MainActivity.this, CommunicationActivity.class);
+            startActivity(intent);
+        }
+        if (view == mCommunicationTextView) {
             Intent intent = new Intent(MainActivity.this, CommunicationActivity.class);
             startActivity(intent);
         }
