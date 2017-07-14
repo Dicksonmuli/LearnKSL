@@ -38,6 +38,37 @@ public class MonthsListActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+<<<<<<< HEAD
+=======
+        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.single_item, months);
+        mListView.setAdapter(adapter);
+
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                String months = ((TextView) view).getText().toString();
+                Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
+
+                //think of using a customized dialog
+
+                //create custom dialog xml
+
+                //syntax for creating custom dialogs
+
+                mDatabase = FirebaseDatabase.getInstance().getReference("NUMBERS");
+                DatabaseReference child1 = mDatabase.child("1");
+
+                // fetch image at this point and display and try saving url to be used with picasso
+
+                DatabaseReference child2 = child1.child("PICTURE");
+//                picasso.url(child2)
+
+                //mostly gifs are used so
+
+
+
+                final Integer itemPosition = i;
+>>>>>>> 611f92fb79b84283e3c05faa6c15033a5172e382
 
     }
 

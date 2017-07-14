@@ -38,6 +38,7 @@ public class DetailFragment extends Fragment {
     private int mPosition;
     private String mMonth;
 
+    private long detailId;
 
     public static DetailFragment newInstace(ArrayList<String> months, Integer position){
         // wrapping months with parcels for serialization
@@ -84,6 +85,8 @@ public class DetailFragment extends Fragment {
 
 //            inflater.inflate(R.menu.menu_main, menu);
     }
-
+    private void setDetailId(long detailId){
+        this.detailId=detailId;
+    }
 
 }
