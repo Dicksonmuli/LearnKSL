@@ -35,7 +35,7 @@ import butterknife.ButterKnife;
 public class MonthsDetailFragment extends Fragment {
     //Binding views
 
-    @Bind(R.id.restaurantImageView) ImageView mImageLabel;
+    @Bind(R.id.basicsImageView) ImageView mImageLabel;
     @Bind(R.id.monthTextView) TextView mNameLabel;
 
     //    member variables

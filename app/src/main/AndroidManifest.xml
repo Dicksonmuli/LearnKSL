@@ -25,7 +25,17 @@
         <activity android:name=".ui.NumbersListActivity" />
         <activity android:name=".ui.DaysListActivity" />
         <activity android:name=".ui.MonthsListActivity" />
-        <activity android:name=".ui.BasicsDetailActivity"></activity>
+        <activity android:name=".ui.BasicsDetailActivity" />
+        <activity android:name=".ui.TutorialsActivity" />
+        <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.FingerSpellingActivity" />
+        <activity android:name=".ui.BasicWordsActivity" />
+        <activity android:name=".ui.BodyAndHealthActivity" />
+        <activity android:name=".ui.SchoolSignsActivity" />
+        <activity android:name=".ui.FamilySignsActivity" />
+        <activity android:name=".ui.OfficeSignsActivity" />
+        <activity android:name=".ui.MoneyAndBusinessActivity" />
+        <activity android:name=".ui.ColorsActivity"></activity>
     </application>
 
 </manifest>
