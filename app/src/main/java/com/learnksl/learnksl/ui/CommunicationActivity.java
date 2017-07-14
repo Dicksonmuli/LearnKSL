@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.learnksl.learnksl.MainActivity;
 import com.learnksl.learnksl.R;
 
 import butterknife.Bind;
