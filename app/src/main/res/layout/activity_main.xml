@@ -41,111 +41,111 @@
 
         </android.support.design.widget.NavigationView>
 
-    <RelativeLayout
-        android:id="@+id/relativelayout"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relativelayout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
 
-        <ImageView
-            android:id="@+id/restaurantImageView"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/basics" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/signName"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignBottom="@+id/restaurantImageView"-->
-            <!--android:layout_alignParentEnd="true"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:background="#99607D8B"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Basics"-->
-            <!--android:textColor="#fff"-->
-            <!--android:textSize="30sp" />-->
-
-        <ImageView
-            android:id="@+id/restaurantImageView1"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tuto"
-            android:layout_below="@+id/restaurantImageView"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="16dp" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/signName1"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="#99607D8B"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Tutorials"-->
-            <!--android:textColor="#fff"-->
-            <!--android:textSize="30sp"-->
-            <!--android:layout_alignBottom="@+id/restaurantImageView1"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentEnd="true" />-->
-        <ImageView
-            android:id="@+id/restaurantImageView2"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/conv"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/restaurantImageView1"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/signName2"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="#99607D8B"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Communication"-->
-            <!--android:textColor="#fff"-->
-            <!--android:textSize="30sp"-->
-            <!--android:layout_alignBottom="@+id/restaurantImageView2"-->
-            <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentStart="true"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:layout_alignParentEnd="true" />-->
-        <ImageView
-            android:id="@+id/ImageView3"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/feedb"
-            android:layout_below="@+id/restaurantImageView2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="34dp" />
-
-        <!--<TextView-->
-            <!--android:id="@+id/signName3"-->
+        <!--<ImageView-->
+            <!--android:id="@+id/restaurantImageView"-->
             <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignBottom="@+id/ImageView3"-->
-            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/basics" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/signName"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignBottom="@+id/restaurantImageView"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#99607D8B"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Basics"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="30sp" />&ndash;&gt;-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/restaurantImageView1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/tuto"-->
+            <!--android:layout_below="@+id/restaurantImageView"-->
             <!--android:layout_alignParentLeft="true"-->
-            <!--android:layout_alignParentRight="true"-->
             <!--android:layout_alignParentStart="true"-->
-            <!--android:background="#99607D8B"-->
-            <!--android:gravity="center"-->
-            <!--android:text="Feedback"/>-->
+            <!--android:layout_marginTop="16dp" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/signName1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#99607D8B"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Tutorials"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignBottom="@+id/restaurantImageView1"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/restaurantImageView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/conv"-->
+            <!--android:layout_marginTop="12dp"-->
+            <!--android:layout_below="@+id/restaurantImageView1"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/signName2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#99607D8B"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Communication"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#fff"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="30sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignBottom="@+id/restaurantImageView2"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true" />&ndash;&gt;-->
+        <!--<ImageView-->
+            <!--android:id="@+id/ImageView3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@drawable/feedb"-->
+            <!--android:layout_below="@+id/restaurantImageView2"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginTop="34dp" />-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/signName3"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignBottom="@+id/ImageView3"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentEnd="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentLeft="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentRight="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#99607D8B"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Feedback"/>&ndash;&gt;-->
 
 
 
 
-    </RelativeLayout>
+    <!--</RelativeLayout>-->
 
 <!--</ScrollView >-->
 </android.support.v4.widget.DrawerLayout>
