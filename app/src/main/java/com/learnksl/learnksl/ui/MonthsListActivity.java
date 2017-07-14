@@ -30,21 +30,6 @@ import butterknife.ButterKnife;
 public class MonthsListActivity extends AppCompatActivity {
     @Bind(R.id.listView) ListView mListView;
 
-    //    member variables
-    private Integer mPosition;
-    String mSource;
-
-    private List<String> mDbMonths = new ArrayList<>();
-
-    //    Emergency calls
-    private String[] months = new String[]{"January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"};
-
-
-    //Database variable
-    private DatabaseReference mDatabase;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,52 +38,8 @@ public class MonthsListActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        ArrayAdapter adapter = new ArrayAdapter(this, R.layout.single_item, months);
-        mListView.setAdapter(adapter);
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                final String months = ((TextView) view).getText().toString();
-                Toast.makeText(MonthsListActivity.this, months, Toast.LENGTH_LONG).show();
-
-                mDatabase = FirebaseDatabase.getInstance().getReference().child("NUMBERS").getRoot();
-
-                DatabaseReference child1 = mDatabase.child("1");
-                DatabaseReference child2 = child1.child("PICTURE");
 
 
-                mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        for (DataSnapshot snapshot: dataSnapshot.getChildren()){
-                            String description = snapshot.child("PICTURE").getValue(String.class);
-                            mDbMonths.add(description);
-                        }
-
-                        //intent when item clicked
-                        Intent intent = new Intent(getApplicationContext(), BasicsDetailActivity.class);
-                        Bundle args = new Bundle();
-                        args.putParcelable("months", Parcels.wrap(mDbMonths));
-//                        args.putInt("position", mPosition);
-                        startActivity(intent);
-
-//                        AlertDialog.Builder monthdialogue = new AlertDialog.Builder(MonthsListActivity.this);
-//                        monthdialogue.setMessage(mDbMonths.get(itemPosition));
-//                        monthdialogue.show();
-//                        monthdialogue.setCancelable(true);
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-
-                    }
-                });
-
-
-
-            }
-        });
     }
 
 }
