@@ -35,8 +35,7 @@ import butterknife.ButterKnife;
  */
 public class MonthsDetailFragment extends Fragment {
     //Binding views
-    private static final int MAX_WIDTH = 400;
-    private static final int MAX_HEIGHT = 300;
+
     @Bind(R.id.restaurantImageView) ImageView mImageLabel;
     @Bind(R.id.monthTextView) TextView mNameLabel;
 

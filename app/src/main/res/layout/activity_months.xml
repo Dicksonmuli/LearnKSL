@@ -4,12 +4,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.MonthsListActivity">
 
-    <fragment
-        android:id="@+id/fragmentRestaurantList"
-        android:name="com.learnksl.learnksl.ui.DetailFragment"
-        android:layout_width="wrap_content"
+    <ListView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_months_detail" />
+        android:id="@+id/listView">
+    </ListView>
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragmentRestaurantList"-->
+        <!--android:name="com.learnksl.learnksl.ui.DetailFragment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--tools:layout="@layout/fragment_months_detail" />-->
 
 
 </RelativeLayout>

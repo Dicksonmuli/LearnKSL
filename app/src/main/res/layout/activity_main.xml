@@ -1,83 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#E2cfea">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
 
+
+
+
+    <!--<android.support.design.widget.NavigationView-->
+        <!--android:id="@+id/nav_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--app:headerLayout="@layout/nav_header_main"-->
+        <!--app:menu="@menu/activity_main_drawer" />-->
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="#E2cfea">-->
+
+    <!-- A CardView that contains a TextView -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.0"
+        android:layout_height="match_parent"></LinearLayout>
 
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1.0"
-            android:background="#3E5C76"
-            android:text="Basics"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="5dp"
-
-            android:layout_weight="1.0"
-            android:background="#748CAB"
-            android:text="Tutorials"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <android.support.design.widget.NavigationView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.0"
-        android:orientation="horizontal" >
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start">
 
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.0"
-            android:background="#748CAB"
-            android:text="Communication"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        </android.support.design.widget.NavigationView>
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="380dp"
-            android:layout_height="220dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.0"
-            android:background="#3E5C76"
-            android:text="FACTS AND FAQs"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    </LinearLayout>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/restaurantImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/basics" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/signName"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/restaurantImageView"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:background="#99607D8B"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Basics"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp" />-->
+
+        <ImageView
+            android:id="@+id/restaurantImageView1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tuto"
+            android:layout_below="@+id/restaurantImageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="16dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/signName1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#99607D8B"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Tutorials"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_alignBottom="@+id/restaurantImageView1"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+        <ImageView
+            android:id="@+id/restaurantImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/conv"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/restaurantImageView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/signName2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#99607D8B"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Communication"-->
+            <!--android:textColor="#fff"-->
+            <!--android:textSize="30sp"-->
+            <!--android:layout_alignBottom="@+id/restaurantImageView2"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+        <ImageView
+            android:id="@+id/ImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/feedb"
+            android:layout_below="@+id/restaurantImageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="34dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/signName3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/ImageView3"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:background="#99607D8B"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Feedback"/>-->
+
+
+
+
+    </RelativeLayout>
+
+<!--</ScrollView >-->
+</android.support.v4.widget.DrawerLayout>

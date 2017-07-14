@@ -90,7 +90,6 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
 //            }
 //        });
     }
-
     //override onclick method
     @Override
     public void onClick(View view) {

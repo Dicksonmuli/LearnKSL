@@ -18,6 +18,7 @@ import com.learnksl.learnksl.R;
  */
 public class DetailFragment extends Fragment {
 
+    private long detailId;
 
     public DetailFragment() {
         // Required empty public constructor
@@ -30,6 +31,8 @@ public class DetailFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_months_detail, container, false);
     }
-
+    private void setDetailId(long detailId){
+        this.detailId=detailId;
+    }
 
 }
