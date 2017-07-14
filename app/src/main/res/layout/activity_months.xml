@@ -10,12 +10,5 @@
         android:id="@+id/listView">
     </ListView>
 
-    <!--<fragment-->
-        <!--android:id="@+id/fragmentRestaurantList"-->
-        <!--android:name="com.learnksl.learnksl.ui.DetailFragment"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--tools:layout="@layout/fragment_detail" />-->
-
 
 </RelativeLayout>
