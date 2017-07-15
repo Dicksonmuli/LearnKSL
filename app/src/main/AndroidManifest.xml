@@ -20,7 +20,10 @@
         </activity>
         <activity android:name=".ui.BasicsListActivity" />
         <activity android:name=".ui.DetailActivity" />
-        <activity android:name=".ui.CommunicationActivity" />
+        <activity android:name=".ui.CommunicationActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
+
+        </activity>
         <activity android:name=".ui.AlphabetsListActivity" />
         <activity android:name=".ui.NumbersListActivity" />
         <activity android:name=".ui.DaysListActivity" />
