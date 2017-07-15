@@ -260,6 +260,8 @@ public class Manager extends Activity {
         }
 
         private void turnCard(Button button,int x, int y) {
+            //setting drawable background for different versions
+            int sdk = android.os.Build.VERSION.SDK_INT;
             button.setBackgroundDrawable(images.get(cards[x][y]));
 
             if(firstCard==null){
