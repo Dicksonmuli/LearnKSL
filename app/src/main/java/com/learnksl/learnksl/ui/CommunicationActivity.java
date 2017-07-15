@@ -40,6 +40,11 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
         mFingersTextView.setOnClickListener(this);
         mBasicWordsTextView.setOnClickListener(this);
         mColorsTextView.setOnClickListener(this);
+        mHealthTextView.setOnClickListener(this);
+        mFamilyTextView.setOnClickListener(this);
+        mMoneyTextView.setOnClickListener(this);
+        mOfficeTextView.setOnClickListener(this);
+        mSchoolTextView.setOnClickListener(this);
     }
     //override onclick method
 
@@ -55,6 +60,26 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
         }
         if (view == mColorsTextView) {
             Intent intent = new Intent(CommunicationActivity.this, ColorsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mHealthTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, BodyAndHealthActivity.class);
+            startActivity(intent);
+        }
+        if (view == mFamilyTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, FamilySignsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mMoneyTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, MoneyAndBusinessActivity.class);
+            startActivity(intent);
+        }
+        if (view == mOfficeTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, OfficeSignsActivity.class);
+            startActivity(intent);
+        }
+        if (view == mSchoolTextView) {
+            Intent intent = new Intent(CommunicationActivity.this, SchoolSignsActivity.class);
             startActivity(intent);
         }
     }
