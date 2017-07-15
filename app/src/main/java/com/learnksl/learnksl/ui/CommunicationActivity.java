@@ -20,7 +20,16 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
     TextView mBasicWordsTextView;
     @Bind(R.id.colorsTextView)
     TextView mColorsTextView;
-
+    @Bind(R.id.healthTextView)
+    TextView mHealthTextView;
+    @Bind(R.id.schoolTextView)
+    TextView mSchoolTextView;
+    @Bind(R.id.familyTextView)
+    TextView mFamilyTextView;
+    @Bind(R.id.officeTextView)
+    TextView mOfficeTextView;
+    @Bind(R.id.moneyTextView)
+    TextView mMoneyTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
