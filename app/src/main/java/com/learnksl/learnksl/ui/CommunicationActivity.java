@@ -63,7 +63,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
             startActivity(intent);
         }
         if (view == mHealthTextView) {
-            Intent intent = new Intent(CommunicationActivity.this, BodyAndHealthActivity.class);
+            Intent intent = new Intent(CommunicationActivity.this, BodyAndHealthActivitygit.class);
             startActivity(intent);
         }
         if (view == mFamilyTextView) {
