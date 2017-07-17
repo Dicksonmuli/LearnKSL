@@ -40,9 +40,6 @@
         <activity android:name=".ui.MoneyAndBusinessActivity" />
         <activity android:name=".ui.ColorsActivity"></activity>
 
-        <activity
-            android:name=".MemoryGameActivity">
-        </activity>
     </application>
 
 </manifest>

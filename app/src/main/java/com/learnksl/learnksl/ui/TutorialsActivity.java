@@ -49,7 +49,7 @@ public class TutorialsActivity extends YouTubeBaseActivity {
             }
         });
 
-
+//
 //        VideoView videoView = (VideoView) findViewById(R.id.videoView);
 //        MediaController mediaController = new MediaController(this);
 //        mediaController.setAnchorView(videoView);
