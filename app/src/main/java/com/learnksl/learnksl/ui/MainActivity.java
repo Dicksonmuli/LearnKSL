@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView mFeedbackImageView;
     @Bind(R.id.feedbackTextView)
     TextView mFeedbackTextView;
+
     @Bind(R.id.gameTextView)
     TextView mGamebackTextView;
     @Bind(R.id.gameImageView)
