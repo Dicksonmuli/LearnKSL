@@ -61,6 +61,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
 //
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
     //override onclick method
 
     @Override
