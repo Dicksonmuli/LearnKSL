@@ -21,7 +21,7 @@
         <activity android:name=".ui.BasicsListActivity" />
         <activity android:name=".ui.DetailActivity" />
         <activity android:name=".ui.CommunicationActivity"
-            android:theme="@style/Theme.Design.NoActionBar">
+            android:theme="@style/Base.Theme">
 
         </activity>
         <activity android:name=".ui.AlphabetsListActivity" />
@@ -36,7 +36,7 @@
         <activity android:name=".ui.BodyAndHealthActivity" />
         <activity android:name=".ui.SchoolSignsActivity" />
         <activity android:name=".ui.FamilySignsActivity" />
-        <activity android:name=".ui.OfficeSignsActivity" />
+        <activity android:name=".ui.PlaceTransportActivity" />
         <activity android:name=".ui.MoneyAndBusinessActivity" />
         <activity android:name=".ui.ColorsActivity"></activity>
 
