@@ -28,17 +28,11 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MonthsListActivity extends AppCompatActivity {
-    @Bind(R.id.listView) ListView mListView;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_months);
-
-        ButterKnife.bind(this);
-
-
 
     }
 
