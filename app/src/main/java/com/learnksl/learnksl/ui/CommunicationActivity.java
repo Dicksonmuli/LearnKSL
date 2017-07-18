@@ -1,8 +1,11 @@
 package com.learnksl.learnksl.ui;
 
 import android.content.Intent;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -31,6 +34,10 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
     @Bind(R.id.moneyTextView)
     TextView mMoneyTextView;
 
+//    Navigation drawer
+    private DrawerLayout mCommunicationDrawer;
+    private ActionBarDrawerToggle mCommunicationToggle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +52,14 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
         mMoneyTextView.setOnClickListener(this);
         mOfficeTextView.setOnClickListener(this);
         mSchoolTextView.setOnClickListener(this);
+
+//Navigation Drawer
+//        mCommunicationDrawer = (DrawerLayout) findViewById(R.id.communication_layout);
+//        mCommunicationToggle = new ActionBarDrawerToggle(this, mCommunicationDrawer, R.string.open,R.string.close);
+//        mCommunicationDrawer.addDrawerListener(mCommunicationToggle);
+//        mCommunicationToggle.syncState();
+//
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     //override onclick method
 
@@ -83,4 +98,11 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
             startActivity(intent);
         }
     }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item){
+//        if (mCommunicationToggle.onOptionsItemSelected(item)){
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 }

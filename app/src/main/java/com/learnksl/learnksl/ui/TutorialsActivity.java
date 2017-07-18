@@ -1,8 +1,11 @@
 package com.learnksl.learnksl.ui;
 
 import android.net.Uri;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
@@ -17,7 +20,7 @@ import com.learnksl.learnksl.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TutorialsActivity extends YouTubeBaseActivity {
+public class TutorialsActivity extends YouTubeBaseActivity  {
     YouTubePlayerView mYoutubePlayerView;
     Button btnPlay;
     YouTubePlayer.OnInitializedListener mOnInitializedListener;
@@ -27,7 +30,6 @@ public class TutorialsActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_tutorials);
         btnPlay=(Button) findViewById(R.id.btnPlay);
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlay);
-
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener(){
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b){
@@ -59,5 +61,8 @@ public class TutorialsActivity extends YouTubeBaseActivity {
 //        videoView.requestFocus();
 //        videoView.start();
 
+
+
     }
+
 }
