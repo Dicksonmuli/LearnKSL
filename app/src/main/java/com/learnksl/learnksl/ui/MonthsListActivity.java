@@ -28,7 +28,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MonthsListActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

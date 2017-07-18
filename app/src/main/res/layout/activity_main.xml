@@ -134,28 +134,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
-        <ImageView
-            android:id="@+id/gameImageView"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/feedb"
-            android:layout_marginTop="12dp"
-            android:layout_below="@+id/ImageView3"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-        <TextView
-            android:id="@+id/gameTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#99607D8B"
-            android:gravity="center"
-            android:text="Game"
-            android:textColor="#fff"
-            android:textSize="30sp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+
     </RelativeLayout>
     </ScrollView>
 

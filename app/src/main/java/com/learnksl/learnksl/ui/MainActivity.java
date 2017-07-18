@@ -9,11 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e48cc69530fe3b954fc5ceeed4513bbd8023cfe
 import com.learnksl.learnksl.R;
-import com.learnksl.learnksl.ui.BasicsListActivity;
-import com.learnksl.learnksl.ui.CommunicationActivity;
-import com.learnksl.learnksl.ui.FeedbackActivity;
-import com.learnksl.learnksl.ui.TutorialsActivity;
+
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -37,10 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Bind(R.id.feedbackTextView)
     TextView mFeedbackTextView;
 
-    @Bind(R.id.gameTextView)
-    TextView mGamebackTextView;
-    @Bind(R.id.gameImageView)
-    ImageView mGamebackImageView;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -104,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, FeedbackActivity.class);
             startActivity(intent);
         }
+<<<<<<< HEAD
 //        if (view == mGamebackImageView) {
 //            Intent intent = new Intent(MainActivity.this, MemoryGameActivity.class);
 //            startActivity(intent);
@@ -112,6 +110,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            Intent intent = new Intent(MainActivity.this, MemoryGameActivity.class);
 //            startActivity(intent);
 //        }
+=======
+>>>>>>> 3e48cc69530fe3b954fc5ceeed4513bbd8023cfe
 
     }
 
