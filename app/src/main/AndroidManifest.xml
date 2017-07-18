@@ -21,7 +21,7 @@
         <activity android:name=".ui.BasicsListActivity" />
         <activity android:name=".ui.DetailActivity" />
         <activity android:name=".ui.CommunicationActivity"
-            android:theme="@style/Theme.Design.NoActionBar">
+            android:theme="@style/Base.Theme">
 
         </activity>
         <activity android:name=".ui.AlphabetsListActivity" />
