@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.learnksl.learnksl.MemoryGameActivity;
 import com.learnksl.learnksl.R;
 import com.learnksl.learnksl.ui.BasicsListActivity;
 import com.learnksl.learnksl.ui.CommunicationActivity;
@@ -36,6 +38,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView mFeedbackImageView;
     @Bind(R.id.feedbackTextView)
     TextView mFeedbackTextView;
+
+    @Bind(R.id.gameTextView)
+    TextView mGamebackTextView;
+    @Bind(R.id.gameImageView)
+    ImageView mGamebackImageView;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
@@ -97,6 +104,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (view == mFeedbackTextView) {
             Intent intent = new Intent(MainActivity.this, FeedbackActivity.class);
+            startActivity(intent);
+        }
+        if (view == mGamebackImageView) {
+            Intent intent = new Intent(MainActivity.this, MemoryGameActivity.class);
+            startActivity(intent);
+        }
+        if (view == mGamebackTextView) {
+            Intent intent = new Intent(MainActivity.this, MemoryGameActivity.class);
             startActivity(intent);
         }
 
