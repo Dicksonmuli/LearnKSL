@@ -28,7 +28,6 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 public class MonthsListActivity extends AppCompatActivity {
-    @Bind(R.id.listView) ListView mListView;
 
 
     @Override
