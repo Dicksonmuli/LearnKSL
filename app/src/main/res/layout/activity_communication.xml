@@ -135,7 +135,7 @@
                                 android:padding="10dp">
 
                                 <TextView
-                                    android:id="@+id/numbersTextView2"
+                                    android:id="@+id/healthTextView"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
@@ -162,7 +162,7 @@
                                 android:padding="10dp">
 
                                 <TextView
-                                    android:id="@+id/numbersTextView3"
+                                    android:id="@+id/schoolTextView"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
@@ -189,7 +189,7 @@
                                 android:padding="10dp">
 
                                 <TextView
-                                    android:id="@+id/numbersTextView4"
+                                    android:id="@+id/familyTextView"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
@@ -216,7 +216,7 @@
                                 android:padding="10dp">
 
                                 <TextView
-                                    android:id="@+id/numbersTextView5"
+                                    android:id="@+id/officeTextView"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
@@ -241,7 +241,7 @@
                                 android:padding="10dp">
 
                                 <TextView
-                                    android:id="@+id/numbersTextView6"
+                                    android:id="@+id/moneyTextView"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:gravity="center"
