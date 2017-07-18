@@ -25,6 +25,7 @@ public class TutorialsActivity extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorials);
+
         btnPlay=(Button) findViewById(R.id.btnPlay);
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlay);
 
