@@ -1,10 +1,7 @@
 package com.learnksl.learnksl.ui;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,6 +10,7 @@ import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
 import com.learnksl.learnksl.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +23,8 @@ public class FingerSpellingActivity extends YouTubeBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finger_spelling);
 
+        btnPlay=(Button) findViewById(R.id.greetingsBtnPlay);
+        mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.greetingsYoutubePlay);
 
         mOnInitializedListener = new YouTubePlayer.OnInitializedListener(){
             @Override
