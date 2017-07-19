@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learnksl.learnksl.ui.FingerSpellingActivity">
+
+    <view
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/place_transportYoutubePlay"
+        layout_alignParentTop="true"
+        layout_centerHorizontal="true"
+        layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/place_transportBtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/place_transportYoutubePlay"
+        android:layout_centerHorizontal="true"
+        android:text="Play" />
+
+
+
+</RelativeLayout>

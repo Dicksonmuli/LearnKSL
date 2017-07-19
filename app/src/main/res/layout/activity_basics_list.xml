@@ -36,7 +36,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="70dp"
+            android:layout_width="50dp"
             android:layout_height="100dp"
             android:id="@+id/numbersImageView"
             android:src="@drawable/ic_format_list_numbered_black_24dp"/>
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="70dp"
+            android:layout_width="50dp"
             android:layout_height="100dp"
             android:id="@+id/alphabetsImageView"
             android:src="@drawable/ic_sort_by_alpha_black_24dp"/>
@@ -94,36 +94,7 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectangle"
-        android:layout_margin="6dp"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="100dp"
-            android:id="@+id/daysImageView"
-            android:src="@drawable/ic_today_black_24dp"/>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:gravity="center_vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/daysTextView"
-                android:textSize="35dp"
-                android:text="Days"
-                android:textColor="@color/colorPrimary"/>
-
-        </LinearLayout>
-    </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -133,7 +104,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="70dp"
+                android:layout_width="50dp"
                 android:layout_height="100dp"
                 android:id="@+id/monthsImageView"
                 android:src="@drawable/ic_date_range_black_24dp"/>
@@ -150,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/monthsTextView"
                     android:textSize="35dp"
-                    android:text="Months"
+                    android:text="Months, Days and Time"
                     android:textColor="@color/colorPrimary"/>
 
             </LinearLayout>

@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.learnksl.learnksl.R;
@@ -91,7 +90,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
             startActivity(intent);
         }
         if (view == mOfficeTextView) {
-            Intent intent = new Intent(CommunicationActivity.this, OfficeSignsActivity.class);
+            Intent intent = new Intent(CommunicationActivity.this, PlaceTransportActivity.class);
             startActivity(intent);
         }
         if (view == mSchoolTextView) {

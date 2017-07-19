@@ -21,12 +21,10 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
     //binding views
     @Bind(R.id.alphabetsTextView) TextView mAlphabetsTextView;
     @Bind(R.id.numbersTextView) TextView mNumbersTextView;
-    @Bind(R.id.daysTextView) TextView mDaysTextView;
     @Bind(R.id.monthsTextView) TextView mMonthsTextView;
 
     @Bind(R.id.alphabetsImageView) ImageView mAlphabetsImageView;
     @Bind(R.id.numbersImageView) ImageView mNumbersImageView;
-    @Bind(R.id.daysImageView) ImageView mDaysImageView;
     @Bind(R.id.monthsImageView) ImageView mMonthsImageView;
 
     private DrawerLayout mDrawerLayout;
@@ -50,7 +48,7 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
 
         mAlphabetsTextView.setOnClickListener(this);
         mNumbersTextView.setOnClickListener(this);
-        mDaysTextView.setOnClickListener(this);
+
         mMonthsTextView.setOnClickListener(this);
 
 //        Intent intent = getIntent();
@@ -99,10 +97,6 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
         }
         if (view == mNumbersTextView || view == mNumbersImageView) {
             Intent intent = new Intent(BasicsListActivity.this, NumbersListActivity.class);
-            startActivity(intent);
-        }
-        if (view == mDaysTextView || view == mDaysImageView) {
-            Intent intent = new Intent(BasicsListActivity.this, DaysListActivity.class);
             startActivity(intent);
         }
         if (view == mMonthsTextView || view == mMonthsImageView) {
