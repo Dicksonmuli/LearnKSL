@@ -22,34 +22,32 @@
 
     </android.support.design.widget.NavigationView>
 
-    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--=======-->
-<!--&lt;!&ndash;<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--&gt;>>>>>> ccea763da02948df446888c8b9c401b1ed88fa3f-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context="com.learnksl.learnksl.ui.FingerSpellingActivity">-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    <!--<view-->
-        <!--class="com.google.android.youtube.player.YouTubePlayerView"-->
-        <!--android:id="@+id/greetingsYoutubePlay"-->
-        <!--layout_alignParentTop="true"-->
-        <!--layout_centerHorizontal="true"-->
-        <!--layout_marginTop="50dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="300dp" />-->
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learnksl.learnksl.ui.FingerSpellingActivity">
 
-    <!--<Button-->
-        <!--android:id="@+id/greetingsBtnPlay"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/greetingsYoutubePlay"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:text="Play" />-->
+    <view
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/greetingsYoutubePlay"
+        layout_alignParentTop="true"
+        layout_centerHorizontal="true"
+        layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/greetingsBtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greetingsYoutubePlay"
+        android:layout_centerHorizontal="true"
+        android:text="Play" />
 
 
 
-<!--</RelativeLayout>-->
-    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -21,34 +21,31 @@
 
     </android.support.design.widget.NavigationView>
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learnksl.learnksl.ui.BasicWordsActivity">
 
-<!--=======-->
-<!--&gt;>>>>>> ccea763da02948df446888c8b9c401b1ed88fa3f-->
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--tools:context="com.learnksl.learnksl.ui.BasicWordsActivity">-->
+    <view
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:id="@+id/verbsYoutubePlay"
+        layout_alignParentTop="true"
+        layout_centerHorizontal="true"
+        layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <!--<view-->
-        <!--class="com.google.android.youtube.player.YouTubePlayerView"-->
-        <!--android:id="@+id/verbsYoutubePlay"-->
-        <!--layout_alignParentTop="true"-->
-        <!--layout_centerHorizontal="true"-->
-        <!--layout_marginTop="50dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content" />-->
-
-    <!--<Button-->
-        <!--android:id="@+id/verbsBtnPlay"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_below="@+id/verbsYoutubePlay"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:text="Play" />-->
+    <Button
+        android:id="@+id/verbsBtnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verbsYoutubePlay"
+        android:layout_centerHorizontal="true"
+        android:text="Play" />
 
 
 
-<!--</RelativeLayout>-->
+</RelativeLayout>
     </android.support.v4.widget.DrawerLayout>
