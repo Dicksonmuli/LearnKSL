@@ -1,10 +1,12 @@
 package com.learnksl.learnksl.ui;
 
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
 import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -14,6 +16,7 @@ import com.learnksl.learnksl.R;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class BodyAndHealthActivity extends YouTubeBaseActivity {
     YouTubePlayerView mYoutubePlayerView;
     Button btnPlay;
@@ -22,6 +25,7 @@ public class BodyAndHealthActivity extends YouTubeBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_body_and_health);
+
 
         btnPlay=(Button) findViewById(R.id.healthBtnPlay);
         mYoutubePlayerView = (YouTubePlayerView) findViewById(R.id.heathYoutubePlay);
@@ -46,6 +50,5 @@ public class BodyAndHealthActivity extends YouTubeBaseActivity {
                 mYoutubePlayerView.initialize(YouTubeConfig.getApiKey(), mOnInitializedListener);
             }
         });
-
     }
 }
