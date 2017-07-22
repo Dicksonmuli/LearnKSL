@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:458622035474:android:3fb75b100900ec5b",
         "android_client_info": {
-          "package_name": "com.learnksl.learnksl"
+          "package_name": "learnksl.com"
         }
       },
       "oauth_client": [
@@ -20,6 +20,50 @@
           "android_info": {
             "package_name": "learnksl.com",
             "certificate_hash": "9c1b136e2d4d3ba50e52ad9f6465bfd9612c22e1"
+          }
+        },
+        {
+          "client_id": "458622035474-b9upevuinlsgoha9qts6ur8c8tt3rcv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOTMP5bgv41X8RqELgGmj7Dv-INbFMH9w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458622035474-b9upevuinlsgoha9qts6ur8c8tt3rcv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458622035474:android:be4bea3c3c4d7d1d",
+        "android_client_info": {
+          "package_name": "com.learnksl.learnksl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458622035474-rvut1qk8lfqdl9slompp07ku3ua10ja1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.learnksl.learnksl",
+            "certificate_hash": "75d23e6c82cbe27e784502375f40b5569d7516e9"
           }
         },
         {

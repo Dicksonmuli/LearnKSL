@@ -46,4 +46,3 @@ dependencies {
     compile files('libs/YouTubeAndroidPlayerApi.jar')
 }
 apply plugin: 'com.google.gms.google-services'
-//google services -firebase
