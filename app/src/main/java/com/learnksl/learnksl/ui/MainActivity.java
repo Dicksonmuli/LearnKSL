@@ -66,15 +66,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-
-
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
     //override onclick method
     @Override
