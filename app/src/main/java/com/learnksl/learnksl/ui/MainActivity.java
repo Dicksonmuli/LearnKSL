@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
 
-
-
     }
     //override onclick method
     @Override
