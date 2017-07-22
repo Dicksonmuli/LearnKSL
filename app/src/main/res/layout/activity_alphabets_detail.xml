@@ -15,7 +15,7 @@
             android:background="@color/colorAccent"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
-            android:text="Alphabetsgit "
+            android:text="Alphabet"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#fff" />
 
