@@ -19,20 +19,20 @@ public class FeedbackActivity extends AppCompatActivity {
 
 
 //   Navigation menu(Hamburger menu)
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
-
-        mDrawerLayout.addDrawerListener(mToggle);
-        mToggle.syncState();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if (mToggle.onOptionsItemSelected(item)){
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
+//
+////      mDrawerLayout.addDrawerListener(mToggle);
+//        mToggle.syncState();
+//
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item){
+//        if (mToggle.onOptionsItemSelected(item)){
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+   }
 }

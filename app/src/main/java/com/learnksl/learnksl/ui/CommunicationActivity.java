@@ -82,7 +82,7 @@ public class CommunicationActivity extends AppCompatActivity implements View.OnC
             startActivity(intent);
         }
         if (view == mFamilyTextView) {
-            Intent intent = new Intent(CommunicationActivity.this, FamilySignsActivity.class);
+            Intent intent = new Intent(CommunicationActivity.this, AdjectiveSignsActivity.class);
             startActivity(intent);
         }
         if (view == mMoneyTextView) {

@@ -31,7 +31,7 @@ public class FingerSpellingActivity extends YouTubeBaseActivity {
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b){
                 List<String> videoList = new ArrayList<>();
 //                videoList.add("ZkJsvB3Us_Y");
-                videoList.add("dLx-fHpLXyY");
+                videoList.add("F-e19ZqRIHs");
                 youTubePlayer.loadVideos(videoList);
 //                youTubePlayer.loadPlaylist("VyI1wtplk3Y");
             }

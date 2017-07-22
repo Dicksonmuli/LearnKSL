@@ -24,6 +24,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.android.support:support-vector-drawable:25.3.1'
     compile 'com.android.support:multidex:1.0.0'
@@ -31,7 +32,7 @@ dependencies {
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'org.parceler:parceler-api:1.1.6'
     compile 'com.getbase:floatingactionbutton:1.10.1'
-    compile 'com.google.firebase:firebase-database:9.2.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
     compile 'com.firebaseui:firebase-ui-database:0.4.1'
     compile 'com.google.firebase:firebase-auth:9.2.1'
     compile 'com.synnapps:carouselview:0.1.4'
@@ -40,9 +41,11 @@ dependencies {
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
+    compile 'com.github.florent37:tutoshowcase:1.0.1'
+    compile 'com.google.gms:google-services:3.1.0'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'org.parceler:parceler:1.1.6'
-    compile files('libs/YouTubeAndroidPlayerApi.jar')
+
 }
 apply plugin: 'com.google.gms.google-services'
 //google services -firebase
