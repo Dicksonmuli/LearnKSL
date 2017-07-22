@@ -37,7 +37,6 @@
         <activity android:name=".ui.DetailActivity" />
         <activity android:name=".ui.CommunicationActivity"
             android:theme="@style/Base.Theme">
-
         </activity>
         <activity android:name=".ui.AlphabetsListActivity" />
         <activity android:name=".ui.NumbersListActivity" />
@@ -45,7 +44,12 @@
         <activity android:name=".ui.MonthsListActivity" />
         <activity android:name=".ui.BasicsDetailActivity" />
         <activity android:name=".ui.TutorialsActivity" />
-        <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.FeedbackActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learnksl.learnksl.ui.MainActivity">
+            </meta-data>
+        </activity>3
         <activity android:name=".ui.FingerSpellingActivity" />
         <activity android:name=".ui.BasicWordsActivity" />
         <activity android:name=".ui.BodyAndHealthActivity" />
