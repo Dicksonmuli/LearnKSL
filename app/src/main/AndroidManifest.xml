@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +36,7 @@
         <activity android:name=".ui.BasicWordsActivity" />
         <activity android:name=".ui.BodyAndHealthActivity" />
         <activity android:name=".ui.SchoolSignsActivity" />
-        <activity android:name=".ui.FamilySignsActivity" />
+        <activity android:name=".ui.AdjectiveSignsActivity" />
         <activity android:name=".ui.PlaceTransportActivity" />
         <activity android:name=".ui.MoneyAndBusinessActivity" />
         <activity android:name=".ui.ColorsActivity"></activity>
