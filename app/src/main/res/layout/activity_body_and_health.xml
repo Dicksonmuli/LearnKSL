@@ -13,7 +13,7 @@
         layout_centerHorizontal="true"
         layout_marginTop="50dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="300dp" />
 
     <Button
         android:id="@+id/healthBtnPlay"

@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.learnksl.learnksl.ui.BasicWordsActivity">
+    tools:context="com.learnksl.learnksl.ui.BodyAndHealthActivity">
 
     <view
         class="com.google.android.youtube.player.YouTubePlayerView"
-        android:id="@+id/verbsYoutubePlay"
+        android:id="@+id/adjYoutubePlay"
         layout_alignParentTop="true"
         layout_centerHorizontal="true"
         layout_marginTop="50dp"
@@ -16,10 +16,10 @@
         android:layout_height="300dp" />
 
     <Button
-        android:id="@+id/verbsBtnPlay"
+        android:id="@+id/adjBtnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/verbsYoutubePlay"
+        android:layout_below="@+id/adjYoutubePlay"
         android:layout_centerHorizontal="true"
         android:text="Play" />
 
