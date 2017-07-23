@@ -9,6 +9,11 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <!-- A CardView that contains a TextView -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"></FrameLayout>
 
     <!--<android.support.design.widget.NavigationView-->
     <!--android:id="@+id/nav_view"-->

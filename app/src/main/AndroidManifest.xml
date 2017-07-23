@@ -11,19 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity"
-            >
+        <!-- Splash screen -->
+        <activity
+            android:name=".ui.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--<activity android:name=".ui.MainActivity"-->
+            <!--&gt;-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity android:name=".ui.MainActivity"/>
         <activity android:name=".ui.BasicsListActivity" />
         <activity android:name=".ui.DetailActivity" />
         <activity android:name=".ui.CommunicationActivity"
             android:theme="@style/Base.Theme">
-
         </activity>
         <activity android:name=".ui.AlphabetsListActivity" />
         <activity android:name=".ui.NumbersListActivity" />
@@ -31,7 +44,12 @@
         <activity android:name=".ui.MonthsListActivity" />
         <activity android:name=".ui.BasicsDetailActivity" />
         <activity android:name=".ui.TutorialsActivity" />
-        <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.FeedbackActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.learnksl.learnksl.ui.MainActivity">
+            </meta-data>
+        </activity>3
         <activity android:name=".ui.FingerSpellingActivity" />
         <activity android:name=".ui.BasicWordsActivity" />
         <activity android:name=".ui.BodyAndHealthActivity" />

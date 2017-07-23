@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.firebase.database.DatabaseReference;
@@ -16,19 +17,26 @@ import com.learnksl.learnksl.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class BasicsListActivity extends AppCompatActivity implements View.OnClickListener{
+public class BasicsListActivity extends AppCompatActivity implements View.OnClickListener {
 
     //binding views
-    @Bind(R.id.alphabetsTextView) TextView mAlphabetsTextView;
-    @Bind(R.id.numbersTextView) TextView mNumbersTextView;
-    @Bind(R.id.monthsTextView) TextView mMonthsTextView;
+    @Bind(R.id.alphabetsTextView)
+    TextView mAlphabetsTextView;
+    @Bind(R.id.numbersTextView)
+    TextView mNumbersTextView;
+    @Bind(R.id.monthsTextView)
+    TextView mMonthsTextView;
 
-    @Bind(R.id.alphabetsImageView) ImageView mAlphabetsImageView;
-    @Bind(R.id.numbersImageView) ImageView mNumbersImageView;
-    @Bind(R.id.monthsImageView) ImageView mMonthsImageView;
+    @Bind(R.id.alphabetsImageView)
+    ImageView mAlphabetsImageView;
+    @Bind(R.id.numbersImageView)
+    ImageView mNumbersImageView;
+    @Bind(R.id.monthsImageView)
+    ImageView mMonthsImageView;
 
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+    private RelativeLayout layout;
 
 
     //member variables
@@ -80,7 +88,7 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
 //            }
 //        });
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open,R.string.close);
+        mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.open, R.string.close);
 
         mDrawerLayout.addDrawerListener(mToggle);
         mToggle.syncState();
@@ -88,6 +96,7 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
+
     //override onclick method
     @Override
     public void onClick(View view) {
@@ -104,12 +113,20 @@ public class BasicsListActivity extends AppCompatActivity implements View.OnClic
             startActivity(intent);
         }
     }
+
     @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        if (mToggle.onOptionsItemSelected(item)){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (mToggle.onOptionsItemSelected(item)) {
             return true;
         }
+
+        if (id == R.id.nav_basics) {
+            Intent intent1 = new Intent(this, BasicsListActivity.class);
+            this.startActivity(intent1);
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
-
 }
