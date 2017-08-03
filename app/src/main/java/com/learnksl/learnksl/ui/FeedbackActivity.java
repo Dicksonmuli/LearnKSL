@@ -1,6 +1,7 @@
 package com.learnksl.learnksl.ui;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.github.johnpersano.supertoasts.library.Style;
+import com.github.johnpersano.supertoasts.library.SuperToast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.learnksl.learnksl.R;
@@ -64,9 +67,14 @@ public class FeedbackActivity extends AppCompatActivity implements View.OnClickL
        //Storing values to firebase
        mFeedback.setValue(feed);
 
+//Customized toast
+       Toast toast = Toast.makeText(this.getApplicationContext(), "Feedback Sent", Toast.LENGTH_LONG);
+       View toastView = toast.getView(); //This'll return the default View of the Toast.
+       toastView.setBackgroundColor(Color.BLUE);
+       toast.show();
 
-       Toast.makeText(this.getApplicationContext(), "Feedback Sent", Toast.LENGTH_LONG).show();
        Intent intent = new Intent(FeedbackActivity.this, MainActivity.class);
        startActivity(intent);
    }
+
 }
